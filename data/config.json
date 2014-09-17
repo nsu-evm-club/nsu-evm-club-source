@@ -1,0 +1,42 @@
+{
+  "title": "Клуб любителей ЭВМ",
+  "pages": [
+    {
+      "title": "Главная",
+      "reference": "/",
+      "baseDir": "main/",
+      "template": "posts.jade",
+      "content": [
+        {
+          "title": "About",
+          "file": "about.md"
+        },
+        {
+          "title": "Организаторы",
+          "file": "organizers.md"
+        }
+      ]
+      
+    },
+    {
+      "title": "Материалы",
+      "reference": "/materials/",
+      "baseDir": "content/",
+      "template": "posts.jade",
+      "content": [
+        {
+          "title": "Как стать крутым программистом и не сойти с ума",
+          "file": "hello.md"
+        },
+        {
+          "title": "Как стать крутым программистом и не сойти с ума",
+          "file": "hello.md"
+        },
+        {
+          "title": "Как стать крутым программистом и не сойти с ума",
+          "file": "hello.md"
+        }
+      ]
+    }
+  ]
+}

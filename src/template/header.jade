@@ -1,0 +1,17 @@
+mixin menu(items)
+  div.col-sm-2
+    div.menu
+      div.top
+      ul.nav.nav-pills.nav-stacked
+        each item in items
+          li
+            a(href=item.href)= item.title
+
+div.header
+  div.container
+    +menu(menu)
+    div.title.col-sm-8
+      p= 'Клуб'
+      p= 'Любителей'
+      p= 'ЭВМ'
+  div.down

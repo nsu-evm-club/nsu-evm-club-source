@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  each record in records
+    +record_view(record.title)
+      != record.data
