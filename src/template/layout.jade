@@ -1,10 +1,3 @@
-mixin record_view(record_title)
-  div.panel.panel-default
-    div.panel-heading
-      h4= record_title
-    div.panel-body
-      block
-
 doctype html
 html
   head
@@ -14,6 +7,7 @@ html
   body
     include header
     div.container
-      block content
+      div.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+        block content
     script(src='/js/jquery.min.js')
     script(src='/js/bootstrap.min.js')

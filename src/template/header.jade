@@ -9,9 +9,11 @@ mixin menu(items)
 
 div.header
   div.container
-    +menu(menu)
-    div.title.col-sm-8
-      p= 'Клуб'
-      p= 'Любителей'
-      p= 'ЭВМ'
+    div.row
+      div.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+        +menu(menu)
+        div.title.col-sm-8
+          p= 'Клуб'
+          p= 'Любителей'
+          p= 'ЭВМ'
   div.down

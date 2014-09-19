@@ -1,6 +1,12 @@
 extends layout
 
+mixin record_view(record)
+  div.panel.panel-default
+    div.panel-heading
+      h4= record.title
+    div.panel-body
+      != record.data
+
 block content
   each record in records
-    +record_view(record.title)
-      != record.data
+    +record_view(record)
