@@ -1,11 +1,12 @@
-### Structured documents
+### Инструментарий программиста ремесленника
 
-Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes.
+Мы с Вами производим наверное самый непостижымый и трудно понимаемый продукт, когда-либо создаваемый человечеством - программы. <br\>
+У столяра есть свой рубанок, у юриста закон, у менеджера богатый дядя. <br\>
+А чем пользуется обычный программист в своей повседневной работе? Этому и будет посвящена первая в этом сезоне лекция.<br\>
 
-### This is a third-tier heading
+#### Внимание!
+На занятие предлагается:<br\>
+1) принести с собой Ваши любимые ПЭВМ, с предустановленным тектовым редактором на Ваше усмотрение <br\>
+2) установить с сайта http://www.sublimetext.com/2 редактор sublime text
 
-You can use  one `#` all the way up to `######` six for different heading sizes.
-
-If you'd like to quote someone, use the > character before the line:
-
-![Прикольная картинка](http://fotoshops.org/uploads/taginator/Oct-2013/image.jpg)
+![Для получения одного балла : назовите лектору третье кармайклово число](http://fotoshops.org/uploads/taginator/Oct-2013/image.jpg)
