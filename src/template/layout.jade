@@ -44,7 +44,7 @@ html
         var title = $(postParent.find('.panel-heading h4')).text();
         var description = $(postParent.find('.panel-body')).find('p:lt(2)').text();
         var image = 'http://' + window.location.host + '/images/project_logo.jpg';
-        var url = window.location.href + '#' + $($(this).find('.anchor')).text();
+        var url = window.location.href + '#' + $($(postParent).find('.anchor')).attr('name');
         $(this).html(VK.Share.button({
           url: url,
           title: title,
