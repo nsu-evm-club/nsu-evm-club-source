@@ -20,7 +20,7 @@ html
     script(type='text/javascript').
       // VK group integration
       VK.Widgets.Group("vk_groups", {
-        mode: 0,
+        mode: 1,
         width: "200",
         height: "320",
         color1: 'FFFFFF',
@@ -32,11 +32,7 @@ html
       $('#socials').affix({
         offset: {
           top: function () {
-              var top = $('.header').height() - $(window).scrollTop();
-              if (top < 0) {
-                top = 0;
-              }
-              return this.top = top;
+              return this.top = $('.header').height();
             }
           }
         }
@@ -48,7 +44,9 @@ html
         var title = $(postParent.find('.panel-heading h4')).text();
         var description = $(postParent.find('.panel-body')).find('p:lt(2)').text();
         var image = 'http://' + window.location.host + '/images/project_logo.jpg';
+        var url = window.location.href + '#' + $($(this).find('.anchor')).text()
         $(this).html(VK.Share.button({
+          url: url,
           title: title,
           description: description,
           image: image

@@ -3,6 +3,7 @@ extends layout
 mixin record_view(record)
   div.post.panel.panel-default
     div.panel-heading
+      a(name=record.anchor).anchor
       h4= record.title
     div.panel-body
       != record.data

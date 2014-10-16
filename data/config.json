@@ -27,16 +27,19 @@
         {
           "title": "GitHub Student Developer Pack",
           "file": "gsp.md",
+          "anchor": "github_student_pack",
           "share": true
         },
         {
           "title": "Немного о виртуальных машинах",
           "file": "vm.md",
+          "anchor": "virtual_machines",
           "share": true
         },
         {
           "title": "Инструментарий программиста ремесленника",
           "file": "hello.md",
+          "anchor": "developer_tools",
           "share": true
         }
       ]
