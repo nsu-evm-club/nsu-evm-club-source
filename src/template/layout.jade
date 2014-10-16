@@ -46,7 +46,7 @@ html
         var image = 'http://' + window.location.host + '/images/project_logo.jpg';
         var url = window.location.href + '#' + $($(postParent).find('.anchor')).attr('name');
         $(this).html(VK.Share.button({
-          url: url,
+          url: encodeURIComponent(url),
           title: title,
           description: description,
           image: image
