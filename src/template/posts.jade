@@ -1,12 +1,16 @@
 extends layout
 
 mixin record_view(record)
-  div.panel.panel-default
+  div.post.panel.panel-default
     div.panel-heading
       h4= record.title
     div.panel-body
       != record.data
+    if record.share
+      div.panel-footer
+        div.share
 
 block content
-  each record in records
-    +record_view(record)
+  div#posts
+    each record in records
+      +record_view(record)

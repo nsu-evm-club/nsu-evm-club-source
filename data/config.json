@@ -26,15 +26,18 @@
       "content": [
         {
           "title": "GitHub Student Developer Pack",
-          "file": "gsp.md"
+          "file": "gsp.md",
+          "share": true
         },
         {
           "title": "Немного о виртуальных машинах",
-          "file": "vm.md"
+          "file": "vm.md",
+          "share": true
         },
         {
           "title": "Инструментарий программиста ремесленника",
-          "file": "hello.md"
+          "file": "hello.md",
+          "share": true
         }
       ]
     }

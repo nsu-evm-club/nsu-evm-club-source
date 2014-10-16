@@ -13,11 +13,22 @@ html
       div.col-md-2.col-sm-3.hidden-xs
         div#socials
           div#vk_groups
-    script(src='http://yastatic.net/jquery/1.11.1/jquery.min.js')
-    script(src='http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js')
-    script(type='text/javascript' src='//vk.com/js/api/openapi.js?115')
+    script(type='text/javascript', src='http://yastatic.net/jquery/1.11.1/jquery.min.js')
+    script(type='text/javascript', src='http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js')
+    script(type='text/javascript', src='http://vk.com/js/api/openapi.js?115')
+    script(type='text/javascript', src='http://vk.com/js/api/share.js?90', charset='windows-1251')
     script(type='text/javascript').
-      VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "320", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 78714695);
+      // VK group integration
+      VK.Widgets.Group("vk_groups", {
+        mode: 0,
+        width: "200",
+        height: "320",
+        color1: 'FFFFFF',
+        color2: '2B587A',
+        color3:
+        '5B7FA6'
+      }, 78714695);
+      // Group intergation view
       $('#socials').affix({
         offset: {
           top: function () {
@@ -30,3 +41,16 @@ html
           }
         }
       );
+      // Make share buttons
+      $('.post .share').each(function () {
+        var parents = $(this).parentsUntil('#posts');
+        var postParent = $(parents[parents.length - 1]);
+        var title = $(postParent.find('.panel-heading h4')).text();
+        var description = $(postParent.find('.panel-body')).find('p:lt(2)').text();
+        var image = window.location.host + '/images/project_logo.png';
+        $(this).html(VK.Share.button({
+          title: title,
+          description: description,
+          image: image
+        }, {type: "link", text: "Поделиться"}));
+      });
