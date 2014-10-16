@@ -47,7 +47,7 @@ html
         var postParent = $(parents[parents.length - 1]);
         var title = $(postParent.find('.panel-heading h4')).text();
         var description = $(postParent.find('.panel-body')).find('p:lt(2)').text();
-        var image = window.location.host + '/images/project_logo.png';
+        var image = 'http://' + window.location.host + '/images/project_logo.png';
         $(this).html(VK.Share.button({
           title: title,
           description: description,
