@@ -25,6 +25,10 @@
       "template": "posts.jade",
       "content": [
         {
+          "title": "GitHub Student Developer Pack",
+          "file": "gsp.md"
+        },
+        {
           "title": "Немного о виртуальных машинах",
           "file": "vm.md"
         },
