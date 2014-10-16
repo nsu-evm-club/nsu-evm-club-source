@@ -8,7 +8,25 @@ html
   body
     include header
     div.container
-      div.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
+      div.col-md-7.col-md-offset-2.col-sm-9
         block content
+      div.col-md-2.col-sm-3.hidden-xs
+        div#socials
+          div#vk_groups
     script(src='http://yastatic.net/jquery/1.11.1/jquery.min.js')
     script(src='http://yastatic.net/bootstrap/3.1.1/js/bootstrap.min.js')
+    script(type='text/javascript' src='//vk.com/js/api/openapi.js?115')
+    script(type='text/javascript').
+      VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "320", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 78714695);
+      $('#socials').affix({
+        offset: {
+          top: function () {
+              var top = $('.header').height() - $(window).scrollTop();
+              if (top < 0) {
+                top = 0;
+              }
+              return this.top = top;
+            }
+          }
+        }
+      );
