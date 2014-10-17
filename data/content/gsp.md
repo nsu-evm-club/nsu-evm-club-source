@@ -5,6 +5,6 @@
 #### PROFIT
 
 + Вам предоставляется возможность на [GitHub](https://github.com/) иметь 5 приватных репозиториев до окончания обучения.
-+ Вам получаете купон на 25$ на [HackHands](https://hackhands.com/)
++ Вы получаете купон на 25$ на [HackHands](https://hackhands.com/)
 + Вам предоставляется возможность бесплатно использовать игровой движок [Unreal Engine](https://www.unrealengine.com/) для консолей, PC и т.д. до окончания обучения.
 + Более подробно о предоставляемых бонусах можно узнать на сайте проекта [GitHub Student Developer Pack](https://education.github.com/pack)
